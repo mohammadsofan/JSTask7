@@ -11,6 +11,7 @@
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .box {
@@ -42,4 +43,9 @@
   padding: 2px 5px;
   background-color: gold;
   border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .row .box {
+    width: 100%;
+  }
 }
